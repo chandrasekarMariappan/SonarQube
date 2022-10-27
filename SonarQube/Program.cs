@@ -10,6 +10,7 @@ namespace SonarQube
             Console.WriteLine("Hello World2!");
             Console.WriteLine("Hello World2132WEWE!");
             Console.WriteLine("Hello Chandrasekar");
+            Console.WriteLine("Hello Kumari");
 
         }
     }
