@@ -14,8 +14,7 @@ namespace SonarQube
             Console.WriteLine("Hello pRAPTHI");
              Console.WriteLine("Hello uTHRA");
              Console.WriteLine("Hello uTHRA2");
-  Console.WriteLine("Hello uTHRA21");
-            Console.WriteLine("Hello uTHRA21dasd");
+  
         }
     }
 }
