@@ -12,6 +12,7 @@ namespace SonarQube
             Console.WriteLine("Hello Chandrasekar");
             Console.WriteLine("Hello Kumari");
             Console.WriteLine("Hello pRAPTHI");
+             Console.WriteLine("Hello uTHRA");
 
         }
     }
