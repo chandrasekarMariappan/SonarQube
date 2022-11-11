@@ -22,7 +22,9 @@ namespace SonarQube
             if (a == 1)
                 b = 5;
             if (a == 1)
-                b = 5;   
+                b = 5;
+            else if (a == 1)
+                b = 5;
 
             c.Open();
             c.ClientInfo = "Sample Application";
