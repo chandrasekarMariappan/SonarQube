@@ -17,6 +17,13 @@ namespace SonarQube
             var connc = @"DATA SOURCE=localhost:1521/xe;SELF TUNING=True;USER ID=system;password=p#11@STC;";
             OracleConnection c = new OracleConnection(connc);
 
+            var a = 1;
+            var b = 3;
+            if (a == 1)
+                b = 5;
+            if (a == 1)
+                b = 5;   
+
             c.Open();
             c.ClientInfo = "Sample Application";
             c.ModuleName = "Chandrasekar";
