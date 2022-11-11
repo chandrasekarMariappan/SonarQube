@@ -13,11 +13,11 @@ namespace SonarQube
             Console.WriteLine("Hello World2132WEWE!");
             Console.WriteLine("Hello Chandrasekar");
             Console.WriteLine("Hello Kumari");
-            Console.WriteLine("Hello Kumari12121");
+            Console.WriteLine("Suppfathaldasd");
             var connc = @"DATA SOURCE=localhost:1521/xe;SELF TUNING=True;USER ID=system;password=p#11@STC;";
             OracleConnection c = new OracleConnection(connc);
 
-            c.Open();
+            c.Open()
             c.ClientInfo = "Sample Application";
             c.ModuleName = "Chandrasekar";
             c.ActionName = "Kafka";
