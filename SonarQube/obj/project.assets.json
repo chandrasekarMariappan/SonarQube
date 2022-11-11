@@ -2,6 +2,21 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "ClosedXML_Excel/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/Spire.Common.dll": {},
+          "lib/Spire.License.dll": {},
+          "lib/Spire.Pdf.dll": {},
+          "lib/Spire.XLS.dll": {}
+        },
+        "runtime": {
+          "lib/Spire.Common.dll": {},
+          "lib/Spire.License.dll": {},
+          "lib/Spire.Pdf.dll": {},
+          "lib/Spire.XLS.dll": {}
+        }
+      },
       "Microsoft.NETCore.App/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -207,10 +222,34 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Oracle.ManagedDataAccess/19.15.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Oracle.ManagedDataAccess.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Oracle.ManagedDataAccess.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "ClosedXML_Excel/1.0.0": {
+      "sha512": "4HwWGjE+ntzD3wN0Yzn0DgZtrVcCGHohnaDlo4kmA56eQPgvmk+8mBReG73XySOoDF8fxF33fBwzlhZmA08INQ==",
+      "type": "package",
+      "path": "closedxml_excel/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "closedxml_excel.1.0.0.nupkg.sha512",
+        "closedxml_excel.nuspec",
+        "lib/Spire.Common.dll",
+        "lib/Spire.License.dll",
+        "lib/Spire.Pdf.dll",
+        "lib/Spire.XLS.dll"
+      ]
+    },
     "Microsoft.NETCore.App/2.1.0": {
       "sha512": "JNHhG+j5eIhG26+H721IDmwswGUznTwwSuJMFe/08h0X2YarHvA15sVAvUkA/2Sp3W0ENNm48t+J7KTPRqEpfA==",
       "type": "package",
@@ -680,31 +719,58 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Oracle.ManagedDataAccess/19.15.1": {
+      "sha512": "FTJ0psLbIQ8IckmpLDAfHJPGatFK4CfheVCMyNkJSsxnMGHi5Fo7PWmpskazMnLyP9z3exXSeuWv5o5K3s6eJg==",
+      "type": "package",
+      "path": "oracle.manageddataaccess/19.15.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "PerfCounters/register_odpm_perfmon_counters.ps1",
+        "PerfCounters/unregister_odpm_perfmon_counters.ps1",
+        "bin/x64/Oracle.ManagedDataAccessIOP.dll",
+        "bin/x86/Oracle.ManagedDataAccessIOP.dll",
+        "content/net40/App.config.install.xdt",
+        "content/net40/App.config.transform",
+        "content/net40/App.config.uninstall.xdt",
+        "content/net40/Web.config.install.xdt",
+        "content/net40/Web.config.transform",
+        "content/net40/Web.config.uninstall.xdt",
+        "info.txt",
+        "lib/net40/Oracle.ManagedDataAccess.dll",
+        "oracle.manageddataaccess.19.15.1.nupkg.sha512",
+        "oracle.manageddataaccess.nuspec",
+        "readme.txt"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Microsoft.NETCore.App >= 2.1.0"
+      "ClosedXML_Excel >= 1.0.0",
+      "Microsoft.NETCore.App >= 2.1.0",
+      "Oracle.ManagedDataAccess >= 19.15.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\chandru\\.nuget\\packages\\": {},
+    "C:\\Users\\chand\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chandru\\source\\repos\\SonarQube\\SonarQube.csproj",
+      "projectUniqueName": "C:\\Users\\chand\\source\\repos\\SonarQubeNew\\SonarQube\\SonarQube.csproj",
       "projectName": "SonarQube",
-      "projectPath": "C:\\Users\\chandru\\source\\repos\\SonarQube\\SonarQube.csproj",
-      "packagesPath": "C:\\Users\\chandru\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chandru\\source\\repos\\SonarQube\\obj\\",
+      "projectPath": "C:\\Users\\chand\\source\\repos\\SonarQubeNew\\SonarQube\\SonarQube.csproj",
+      "packagesPath": "C:\\Users\\chand\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\chand\\source\\repos\\SonarQubeNew\\SonarQube\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\chandru\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\chand\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -728,10 +794,18 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
+          "ClosedXML_Excel": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
           "Microsoft.NETCore.App": {
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "Oracle.ManagedDataAccess": {
+            "target": "Package",
+            "version": "[19.15.1, )"
           }
         },
         "imports": [
@@ -741,5 +815,27 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'ClosedXML_Excel 1.0.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "ClosedXML_Excel",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Oracle.ManagedDataAccess 19.15.1' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Oracle.ManagedDataAccess",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
 }
